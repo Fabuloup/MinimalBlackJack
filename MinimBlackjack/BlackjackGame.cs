@@ -64,6 +64,20 @@ namespace MinimBlackjack
             }
         }
 
+        private string _statusMessage = string.Empty;
+        public string StatusMessage
+        {
+            get => _statusMessage;
+            set
+            {
+                if (_statusMessage != value)
+                {
+                    _statusMessage = value;
+                    OnPropertyChanged(nameof(StatusMessage));
+                }
+            }
+        }
+
         // Cartes du croupier et du joueur
         public ObservableCollection<PlayingCard> DealerCards { get; private set; }
         public ObservableCollection<PlayingCard> PlayerCards { get; private set; }
@@ -91,6 +105,7 @@ namespace MinimBlackjack
         public void Reset()
         {
             IsGameFinished = false;
+            StatusMessage = string.Empty;
             DealerCards.Clear();
             PlayerCards.Clear();
             Deck = CreateDeck();
@@ -279,27 +294,32 @@ namespace MinimBlackjack
             {
                 Wins++;
                 PlayerMoney += (int)(CurrentBet * 2.5); // Paiement 3:2 pour un blackjack
+                StatusMessage = "Blackjack! You win!";
             }
             else if (playerValue > 21)
             {
                 // Le joueur a dépassé 21
                 Losses++;
+                StatusMessage = "You lose!";
             }
             else if (dealerValue > 21 || playerValue > dealerValue)
             {
                 // Le croupier a dépassé 21 ou le joueur a une meilleure main
                 Wins++;
                 PlayerMoney += CurrentBet * 2; // Paiement 1:1
+                StatusMessage = "You win!";
             }
             else if (playerValue < dealerValue)
             {
                 // Le croupier a une meilleure main
                 Losses++;
+                StatusMessage = "You lose!";
             }
             else
             {
                 // Égalité, le joueur ne perd pas sa mise
                 PlayerMoney += CurrentBet;
+                StatusMessage = "It's a tie!";
             }
 
             if (CurrentBet <= PlayerMoney)

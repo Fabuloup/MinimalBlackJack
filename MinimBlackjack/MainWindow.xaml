@@ -33,9 +33,9 @@
                     <RotateTransform Angle="-25" CenterX="30" CenterY="45"/>
                 </uc:PlayingCardUI.RenderTransform>
             </uc:PlayingCardUI>
-            <uc:PlayingCardUI Margin="-150,0,0,-33">
+            <uc:PlayingCardUI Margin="-150,0,0,-35">
                 <uc:PlayingCardUI.RenderTransform>
-                    <RotateTransform Angle="-25" CenterX="30" CenterY="45"/>
+                    <RotateTransform Angle="-20" CenterX="30" CenterY="45"/>
                 </uc:PlayingCardUI.RenderTransform>
             </uc:PlayingCardUI>
 
@@ -72,6 +72,10 @@
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,40">
+            <TextBlock Text="{Binding StatusMessage}" FontSize="20" FontWeight="Bold" Foreground="#bec3c1"/>
         </StackPanel>
 
         <!-- Statistiques à gauche -->
