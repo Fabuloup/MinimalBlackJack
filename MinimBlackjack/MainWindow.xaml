@@ -27,7 +27,18 @@
                 </StackPanel>
             </StackPanel>
             <TextBlock Text="BLACKJACK" FontSize="24" FontWeight="Bold" Foreground="#c4acc8" Margin="20,0" VerticalAlignment="Center"/>
-            <uc:PlayingCardUI Margin="50,0" />
+
+            <uc:PlayingCardUI Margin="50,0">
+                <uc:PlayingCardUI.RenderTransform>
+                    <RotateTransform Angle="-25" CenterX="30" CenterY="45"/>
+                </uc:PlayingCardUI.RenderTransform>
+            </uc:PlayingCardUI>
+            <uc:PlayingCardUI Margin="-150,0,0,-33">
+                <uc:PlayingCardUI.RenderTransform>
+                    <RotateTransform Angle="-25" CenterX="30" CenterY="45"/>
+                </uc:PlayingCardUI.RenderTransform>
+            </uc:PlayingCardUI>
+
         </StackPanel>
 
         <!-- Cartes centrales -->
