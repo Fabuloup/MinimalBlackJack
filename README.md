@@ -14,8 +14,6 @@ Minimal BlackJack is a lightweight and visually minimalist implementatio
 
 - 💡 Built with WPF and C#
 
-- ⚡ Fast and responsive gameplay
-
 ## 🚀 Getting Started
 
 ### Running the Game
