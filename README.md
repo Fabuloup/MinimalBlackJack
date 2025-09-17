@@ -20,12 +20,10 @@ Minimal BlackJack is a lightweight and visually minimalist implementatio
 
 ### Running the Game
 
-1. Clone the repository:
+1. Clone the repository:
 
 ```bash
-
 git clone https://github.com/Fabuloup/MinimalBlackJack.git
-
 ```
 
 2. Open the solution in Visual Studio.
