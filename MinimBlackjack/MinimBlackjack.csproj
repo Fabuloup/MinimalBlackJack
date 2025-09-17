@@ -8,6 +8,13 @@
     <UseWPF>true</UseWPF>
     <SignAssembly>False</SignAssembly>
     <AssemblyOriginatorKeyFile>C:\Users\farichard\Downloads\personnel_fabien_richard.cer</AssemblyOriginatorKeyFile>
+    <ApplicationIcon>Ressources\icon.ico</ApplicationIcon>
+    <AssemblyName>BlackJack</AssemblyName>
+    <DelaySign>False</DelaySign>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Ressources\icon.ico" />
+  </ItemGroup>
 
 </Project>
