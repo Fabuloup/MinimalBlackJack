@@ -18,21 +18,15 @@ Minimal BlackJack is a lightweight and visually minimalist implementatio
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- Windows OS
-
-- [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/d Studio (recommended for development)
-
 ### Running the Game
 
 1. Clone the repository:
 
-   ```bash
+```bash
 
-   git clone https://github.com/Fabuloup/MinimalBlackJack.git
+git clone https://github.com/Fabuloup/MinimalBlackJack.git
 
-   ```
+```
 
 2. Open the solution in Visual Studio.
 3. Build and run the project.
